@@ -1,0 +1,101 @@
+h1, h2, h3, p, body, div {
+   font-family: Tahoma, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;  
+
+}
+
+h1  {  
+   font-size: 1.8em; 
+   margin: 0.25em 0 0.25em 0;
+}
+h2  {   
+   font-size: 1.2em;    
+   margin: 0.5em 0 0.25em 0;
+}
+p, body {
+   font-size: 0.9em;
+} 
+p {
+   margin-bottom: 1em;
+}  
+body {
+   background-color: white; 
+}
+
+article {
+   background-color: #F5F5F5;
+   	margin: 5em;
+	margin-bottom:2em;
+    margin-left: 20em;
+	padding: 1em;
+
+}
+
+
+
+figure {    
+	position:related;
+	float:left;
+}
+figcaption {
+   width: 140px;
+   background-color: black;
+   color:white;
+   height: 20px;
+   padding:5px;
+   opacity: 0.7;
+	position: relative;
+	top: -30px;
+
+
+}
+.overlayed {
+	position: relative;
+	top: -183px;
+	left: 0px;
+
+}
+.entry {
+   overflow: auto;
+   border-top: 1pt solid #ff8800;
+
+}
+.entry1 {
+   overflow: auto;
+   border-top: 1pt solid #ff8800;
+	margin-bottom:-10.5em;
+}
+.entry3 {
+   overflow: auto;
+   border-top: 1pt solid #ff8800;
+	margin-bottom:-10.5em;
+}
+.linkbutton {
+   background-color: #ff8800;
+   color: white;
+   text-decoration: none; 
+   font-size: 0.75em;  
+   margin-top: 3em;
+	padding: 5px;  
+	float:right;
+}
+
+
+footer {
+   background-color: #474747;
+   color: #cacaca;
+   padding:2em;
+}
+footer h2 { color: #a4a1a1; }   
+.footer-related {
+   border-top: 1pt solid #ff8800;
+   	float:left;
+	padding-right: 5em;
+
+}
+.footer-section{
+   border-top: 1pt solid #ff8800;
+   padding: 1em;
+}
+.footer-related img { margin: 3px; }

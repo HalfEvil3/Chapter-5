@@ -11,7 +11,7 @@ header {
 }
 header .brand {
    font-family: Vendana, Arial, sans-serif;
-
+	float:left;
    padding: 8px 20px 12px;
    margin-left: 3em;
    font-size: 1.5em;
@@ -22,18 +22,17 @@ header .brand {
 }
 
 header nav {
-
+	float:left;
    margin: 0.70em 1em 0 0;   
-
 }
 
 header ul {
-
+	list-style-type: none;
    margin:0;
    padding:0;
 }
 header li {
-
+	display:inline;
    padding: 0 1em;
 }
 header li a:link {
@@ -44,17 +43,25 @@ header li a:link {
 /* Main structure */
 
 div#container {
- 
+    position: relative;
+
 }
 #main {
    margin: 0 20em 0 16em;
+
 }
 
 aside {
- 
+	position:absolute;
+    width: 19em;
+	right:0;
+	top:0;
 }
 #rail {
- 
+	position:absolute;
+    width: 15em;
+	left:0;
+	top:0;
 }
 
 /* other common classes */
@@ -62,11 +69,13 @@ aside {
 .well, .alert {
    margin-bottom: 2em;
    padding: 1em;
+
 }
 .well {   
    background-color: #f5f5f5;
    border: 1px solid #eee;
    border: 1px solid rgba(0, 0, 0, 0.05);
+
 }
 .well h3 {
    background-color: #b6d1f2;
@@ -77,18 +86,18 @@ aside {
    background-color: #edebe1;
    border-color: #e0d9cb;
    color: #817b58;
+
 }
 
 .breadcrumb {
    padding: 0.5em 1em;
-
    list-style: none;
    background-color: #fbfbfb;
 }
 
 /* main styles */
 #main {
-   padding: 0.5em 0.75em;
+   padding: 0.5em 0.75em; 
 }
 #main h2 {
    padding-top: 1em;
@@ -102,17 +111,24 @@ aside {
    text-align: left;
 }
 #main table {
+	display: block;
+}
+#main td{	
+	padding-right: 4em;
+}
+
+#main td img{	
+	padding-left: 1em;
 
 }
 
-
 #main #yourCompany {
-
+	float:left;
    margin-bottom: 1.5em;
    font-size: 0.8em;
 }
 #main #client {
-
+	float:right;
    font-size: 0.8em;
 }
 #main hr {
@@ -124,6 +140,9 @@ aside {
    text-align: center;
    color: #f5f5f5;
    text-decoration: none;    
+   display:block;
+   width:10em;
+   padding: 8px;
 }
 
 
@@ -145,6 +164,7 @@ aside {
 ul#changeList, ul#sellersList, ul#messageList {
    background-color: white;
    list-style-type:none;  
+   
 }
 ul#changeList li {   
    overflow: auto;  
@@ -154,7 +174,7 @@ ul#changeList li  p{
    padding-top: 0.5em;
 }
 ul#changeList li span {
-
+	float:left;
    min-width: 1.75em;
    text-align: right;
    font-size: 2em;
@@ -169,6 +189,7 @@ ul#sellersList li, ul#messageList li {
    font-size: 0.75em;
 }
 ul#sellersList img{
+		float:left;
    
 }
 ul#sellersList p {
@@ -176,7 +197,7 @@ ul#sellersList p {
 }
 
 ul#messageList  img {
-  
+	float:left;
    padding-right: 0.5em;
 }
 #messageList li  p {
